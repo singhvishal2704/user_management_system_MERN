@@ -8,10 +8,9 @@ const ViewUser = ({match}) => {
 
   useEffect(() => {
     axios.get(`/api/users/${match.params.id}`).then((response) => setData(response.data));
-    console.log(match.params.id)
   }, [match])
   return (
-    <div>
+    <div style={{minHeight: '80vh'}}>
       <Container>
         <Row>
           <Col md={{ span: 6, offset: 3 }} style={{ padding: "5%" }}>

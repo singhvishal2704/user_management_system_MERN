@@ -11,9 +11,9 @@ const Home = () => {
         .then(response => setData(response.data));
   }, [])
   return (
-    <>
+    <div style={{minHeight: '80vh'}}>
       <Container style={{paddingTop: '10px'}}>
-        <Row>
+       <Row>
           <Col>
           <CardGroup style={{alignItems: 'center', justifyContent: 'center'}}>
             {data.map((item) => (
@@ -24,7 +24,7 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 
