@@ -38,7 +38,7 @@ function ModalContainer(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Edit User
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
